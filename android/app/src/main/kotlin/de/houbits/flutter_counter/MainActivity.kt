@@ -1,0 +1,6 @@
+package de.houbits.flutter_counter
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
