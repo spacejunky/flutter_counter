@@ -1,6 +1,6 @@
 # FROM gitpod/flutter:latest
 
-FROM gitpod/workspace-full
+FROM gitpod/workspace-full-vnc
 
 USER gitpod
 
@@ -23,6 +23,8 @@ RUN set -ex; \
     flutter upgrade; \
     flutter config --enable-web; \
     flutter precache
+
+RUN flutter config --enable-linux-desktop
 
 # additional comfort
 RUN brew install fzf
