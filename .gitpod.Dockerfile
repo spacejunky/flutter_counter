@@ -25,7 +25,7 @@ RUN set -ex; \
     flutter precache
 
 RUN set -ex; \
-    sudo apt-get update && sudo apt-get install libgtk-3-dev
+    sudo apt-get update && sudo apt-get install libgtk-3-dev; \
     flutter config --enable-linux-desktop
 
 # additional comfort
