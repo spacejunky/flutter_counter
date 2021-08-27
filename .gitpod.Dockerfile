@@ -24,7 +24,9 @@ RUN set -ex; \
     flutter config --enable-web; \
     flutter precache
 
-RUN flutter config --enable-linux-desktop
+RUN set -ex; \
+    sudo apt-get update && sudo apt-get install libgtk-3-dev
+    flutter config --enable-linux-desktop
 
 # additional comfort
 RUN brew install fzf
