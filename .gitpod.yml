@@ -4,10 +4,10 @@ image:
 tasks:
   - init: flutter pub get 
 
-ports:
-  - port: 8080
-    onOpen: open-browser
-    visibility: public
+# ports:
+#   - port: 8080
+#     onOpen: open-browser
+#     visibility: public
 
 vscode:
   extensions:
