@@ -1,0 +1,8 @@
+{
+    "dart.debugExtensionBackendProtocol": "sse",
+    "dart.flutterRunAdditionalArgs": [
+        "-v",
+        "--web-port 8080",
+        "--web-hostname 0.0.0.0"
+    ]
+}
